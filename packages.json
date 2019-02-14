@@ -1,5 +1,5 @@
 {
-    "packageId": "9bd9eb88921de8",
+    "packageId": "2397f0be42f89c",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -22,7 +22,15 @@
                     "question": "parcel type",
                     "type": "options",
                     "values": {
-                        "options": [],
+                        "options": [
+                            "amazon",
+                            "regsietered letter",
+                            "parcel",
+                            "groceries",
+                            "flowers",
+                            "laundry",
+                            "other"
+                        ],
                         "multiple": "single",
                         "none": false,
                         "description": "select the type of parcel"
