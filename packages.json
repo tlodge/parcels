@@ -1,5 +1,5 @@
 {
-    "packageId": "1c708bafb37836",
+    "packageId": "20026d4982ad62",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -199,6 +199,127 @@
                         }
                     },
                     "webhookId": "2015ff6d5e308a"
+                }
+            ]
+        },
+        {
+            "buttonId": "21eb5186e198b",
+            "name": "pickups",
+            "description": "button description",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "datastore question",
+                    "type": "datastoreitem",
+                    "values": {
+                        "storeId": "deliveries",
+                        "schema": [
+                            {
+                                "id": "1dd9c8a178fd1",
+                                "path": "1dd9c8a178fd1",
+                                "alias": "recipient"
+                            },
+                            {
+                                "id": "102ed7e1ce2796",
+                                "path": "102ed7e1ce2796",
+                                "alias": "type"
+                            },
+                            {
+                                "id": "2391a50203f998",
+                                "path": "2391a50203f998",
+                                "alias": "code"
+                            },
+                            {
+                                "id": "112aa046d29fb2",
+                                "path": "112aa046d29fb2",
+                                "alias": "location"
+                            }
+                        ]
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "18c521ca016893",
+                    "number": 1
+                },
+                {
+                    "question": "please provide your signature",
+                    "type": "signature",
+                    "values": {},
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "13deb06d11deb3",
+                    "number": 2
+                }
+            ],
+            "navigation": {
+                "id": "18c521ca016893",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "13deb06d11deb3",
+                        "type": "node",
+                        "parent": "18c521ca016893",
+                        "children": [
+                            {
+                                "id": "cac4267a920ae8",
+                                "type": "node",
+                                "parent": "13deb06d11deb3",
+                                "children": [
+                                    {
+                                        "id": "18889d7a87b8b2",
+                                        "type": "node",
+                                        "parent": "cac4267a920ae8",
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "webhooks": [
+                {
+                    "name": "log endpoint",
+                    "type": "log",
+                    "url": "https://[buttonkit]/api/v1/datastore/log",
+                    "method": "POST",
+                    "contentType": "json",
+                    "parameters": {
+                        "dynamic": {
+                            "presser": [
+                                {
+                                    "id": "cac4267a920ae8_presser",
+                                    "type": "presser"
+                                }
+                            ],
+                            "pressed": [
+                                {
+                                    "id": "cac4267a920ae8_pressed",
+                                    "type": "pressed"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "_datastorename": "collected"
+                        }
+                    },
+                    "webhookId": "cac4267a920ae8"
+                },
+                {
+                    "name": "delete log item",
+                    "type": "deletelogitem",
+                    "url": "https://[buttonkit]/api/v1/datastore/delete/question",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": [
+                            "18c521ca016893"
+                        ],
+                        "static": {
+                            "questionId": "18c521ca016893"
+                        }
+                    },
+                    "webhookId": "18889d7a87b8b2"
                 }
             ]
         }
