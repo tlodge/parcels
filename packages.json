@@ -1,5 +1,5 @@
 {
-    "packageId": "2397f0be42f89c",
+    "packageId": "1c708bafb37836",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -46,7 +46,8 @@
                     "values": {
                         "url": "https://[buttonkit]/api/v1/unique",
                         "method": "POST",
-                        "responseType": "text"
+                        "responseType": "text",
+                        "description": "please write this code on the letter/package.  This code will be provided to you at pickup."
                     },
                     "validators": [],
                     "compulsory": true,
@@ -105,15 +106,20 @@
                                                         "id": "2015ff6d5e308a",
                                                         "type": "node",
                                                         "parent": "13ea095573d5f3",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": []
                                                     }
-                                                ]
+                                                ],
+                                                "rules": []
                                             }
-                                        ]
+                                        ],
+                                        "rules": []
                                     }
-                                ]
+                                ],
+                                "rules": []
                             }
-                        ]
+                        ],
+                        "rules": []
                     }
                 ]
             },
