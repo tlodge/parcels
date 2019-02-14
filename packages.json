@@ -1,5 +1,5 @@
 {
-    "packageId": "bcbfe2578668e",
+    "packageId": "9bd9eb88921de8",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -36,8 +36,8 @@
                     "question": "parcel code",
                     "type": "serverfunction",
                     "values": {
-                        "url": "",
-                        "method": "GET",
+                        "url": "https://[buttonkit]/api/v1/unique",
+                        "method": "POST",
                         "responseType": "text"
                     },
                     "validators": [],
