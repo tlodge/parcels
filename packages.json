@@ -1,0 +1,192 @@
+{
+    "packageId": "bcbfe2578668e",
+    "name": "parcels",
+    "description": "parcel pickup and delivery",
+    "buttons": [
+        {
+            "buttonId": "153f852dac4c0e",
+            "name": "parcel delivery",
+            "description": "parcel delivery",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "who is the parcel for?",
+                    "type": "user",
+                    "values": {},
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "1dd9c8a178fd1",
+                    "number": 1
+                },
+                {
+                    "question": "parcel type",
+                    "type": "options",
+                    "values": {
+                        "options": [],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "select the type of parcel"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "102ed7e1ce2796",
+                    "number": 2
+                },
+                {
+                    "question": "parcel code",
+                    "type": "serverfunction",
+                    "values": {
+                        "url": "",
+                        "method": "GET",
+                        "responseType": "text"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2391a50203f998",
+                    "number": 3
+                },
+                {
+                    "question": "where is it located",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "sh1",
+                            "sh2",
+                            "sh3",
+                            "sh4",
+                            "sh5",
+                            "f",
+                            "safe"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "please select where the parcel will be stored"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "112aa046d29fb2",
+                    "number": 4
+                }
+            ],
+            "navigation": {
+                "id": "1dd9c8a178fd1",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "102ed7e1ce2796",
+                        "type": "node",
+                        "parent": "1dd9c8a178fd1",
+                        "children": [
+                            {
+                                "id": "2391a50203f998",
+                                "type": "node",
+                                "parent": "102ed7e1ce2796",
+                                "children": [
+                                    {
+                                        "id": "112aa046d29fb2",
+                                        "type": "node",
+                                        "parent": "2391a50203f998",
+                                        "children": [
+                                            {
+                                                "id": "13ea095573d5f3",
+                                                "type": "node",
+                                                "parent": "112aa046d29fb2",
+                                                "children": [
+                                                    {
+                                                        "id": "2015ff6d5e308a",
+                                                        "type": "node",
+                                                        "parent": "13ea095573d5f3",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "webhooks": [
+                {
+                    "name": "parcel deliveries",
+                    "type": "log",
+                    "url": "https://[buttonkit]/api/v1/datastore/log",
+                    "method": "POST",
+                    "contentType": "json",
+                    "parameters": {
+                        "dynamic": {
+                            "presser": [
+                                {
+                                    "id": "13ea095573d5f3_presser",
+                                    "type": "presser"
+                                }
+                            ],
+                            "pressed": [
+                                {
+                                    "id": "13ea095573d5f3_pressed",
+                                    "type": "pressed"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "_datastorename": "deliveries"
+                        }
+                    },
+                    "webhookId": "13ea095573d5f3"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [
+                                {
+                                    "id": "1dd9c8a178fd1",
+                                    "type": "user",
+                                    "value": {}
+                                }
+                            ],
+                            "placeholders": [
+                                {
+                                    "id": "1dd9c8a178fd1username",
+                                    "key": "username",
+                                    "type": "question"
+                                },
+                                {
+                                    "id": "102ed7e1ce2796",
+                                    "key": "value",
+                                    "type": "question"
+                                },
+                                {
+                                    "id": "2391a50203f998",
+                                    "key": "value",
+                                    "type": "question"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "New parcel",
+                                "body": "Dear [1dd9c8a178fd1username],  you have a new parcel.  Please come and pick it up at your convenience. Parcel code: [2391a50203f998]\n\nThe wharfside team."
+                            },
+                            "sms": {
+                                "body": "Dear [1dd9c8a178fd1username], you have a new parcel ([102ed7e1ce2796]).  Please come and pick it up at your convenience. code: [2391a50203f998]"
+                            },
+                            "message": {
+                                "subject": "new parcel",
+                                "body": "You have a new parcel ([102ed7e1ce2796]).  Please come and pick it up, quoting [2391a50203f998]"
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "2015ff6d5e308a"
+                }
+            ]
+        }
+    ]
+}
