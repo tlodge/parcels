@@ -1,5 +1,5 @@
 {
-    "packageId": "2473ef8b696088",
+    "packageId": "267afa1601d0ba",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -267,11 +267,10 @@
                                 "parent": "13deb06d11deb3",
                                 "children": [
                                     {
-                                        "id": "18889d7a87b8b2",
+                                        "id": "13baed5c9a3d3c",
                                         "type": "node",
                                         "parent": "cac4267a920ae8",
-                                        "children": [],
-                                        "rules": []
+                                        "children": []
                                     }
                                 ],
                                 "rules": []
@@ -315,14 +314,16 @@
                     "url": "https://[buttonkit]/api/v1/datastore/delete/question",
                     "method": "POST",
                     "parameters": {
-                        "dynamic": [
-                            "18c521ca016893"
-                        ],
+                        "dynamic": {
+                            "ids": [
+                                "18c521ca016893"
+                            ]
+                        },
                         "static": {
                             "questionId": "18c521ca016893"
                         }
                     },
-                    "webhookId": "18889d7a87b8b2"
+                    "webhookId": "13baed5c9a3d3c"
                 }
             ]
         }
