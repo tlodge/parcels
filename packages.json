@@ -1,5 +1,5 @@
 {
-    "packageId": "2878ab35cd87e6",
+    "packageId": "2ecb9b86389322",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -103,11 +103,10 @@
                                                 "parent": "112aa046d29fb2",
                                                 "children": [
                                                     {
-                                                        "id": "299c14905e06b",
+                                                        "id": "2a55cacbceab32",
                                                         "type": "node",
                                                         "parent": "13ea095573d5f3",
-                                                        "children": [],
-                                                        "rules": []
+                                                        "children": []
                                                     }
                                                 ],
                                                 "rules": []
@@ -160,13 +159,13 @@
                         "dynamic": {
                             "recipients": [
                                 {
-                                    "id": "1dd9c8a178fd1",
-                                    "type": "user",
+                                    "id": "presser",
+                                    "type": "presser",
                                     "value": {}
                                 },
                                 {
-                                    "id": "presser",
-                                    "type": "presser",
+                                    "id": "1dd9c8a178fd1",
+                                    "type": "question",
                                     "value": {}
                                 }
                             ],
@@ -175,6 +174,12 @@
                                     "id": "1dd9c8a178fd1:username",
                                     "qid": "1dd9c8a178fd1",
                                     "key": "username",
+                                    "type": "question"
+                                },
+                                {
+                                    "id": "102ed7e1ce2796",
+                                    "qid": "102ed7e1ce2796",
+                                    "key": "value",
                                     "type": "question"
                                 },
                                 {
@@ -194,37 +199,25 @@
                                     "qid": "1dd9c8a178fd1",
                                     "key": "surname",
                                     "type": "question"
-                                },
-                                {
-                                    "id": "102ed7e1ce2796",
-                                    "qid": "102ed7e1ce2796",
-                                    "key": "value",
-                                    "type": "question"
-                                },
-                                {
-                                    "id": "1dd9c8a178fd1:apartment",
-                                    "qid": "1dd9c8a178fd1",
-                                    "key": "apartment",
-                                    "type": "question"
                                 }
                             ]
                         },
                         "static": {
                             "email": {
-                                "subject": "new parcel",
-                                "body": "Dear [1dd9c8a178fd1:firstname] [1dd9c8a178fd1:surname], you have a new parcel ([102ed7e1ce2796]).  Please come and pick it up at your convenience.  Quote code:[2391a50203f998]."
+                                "subject": "New parcel",
+                                "body": "Dear [1dd9c8a178fd1:firstname][1dd9c8a178fd1:surname].  You have a new parcel ([102ed7e1ce2796]).  Please come an pick it up at your earliest convenience ([2391a50203f998])"
                             },
                             "sms": {
-                                "body": "Dear [1dd9c8a178fd1:username], you have a new parcel ([2391a50203f998]).  Please come and pick it up, code: [2391a50203f998]"
+                                "body": "Dear [1dd9c8a178fd1:username], you have a parcel ([102ed7e1ce2796]).  Please come and pick it up.  Code:[2391a50203f998]"
                             },
                             "message": {
-                                "subject": "parcel delivery",
-                                "body": "Dear [1dd9c8a178fd1:apartment], you have a new parcel ([102ed7e1ce2796]) with code:[2391a50203f998].  Please come and pick it up at your convenience!"
+                                "subject": "New parcel",
+                                "body": "You have a new parcel [102ed7e1ce2796].  Pick it up with code: [2391a50203f998]"
                             },
                             "recipients": []
                         }
                     },
-                    "webhookId": "299c14905e06b"
+                    "webhookId": "2a55cacbceab32"
                 }
             ]
         },
