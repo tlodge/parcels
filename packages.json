@@ -1,5 +1,5 @@
 {
-    "packageId": "161f45cea9468b",
+    "packageId": "2878ab35cd87e6",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -106,7 +106,8 @@
                                                         "id": "299c14905e06b",
                                                         "type": "node",
                                                         "parent": "13ea095573d5f3",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": []
                                                     }
                                                 ],
                                                 "rules": []
@@ -161,6 +162,11 @@
                                 {
                                     "id": "1dd9c8a178fd1",
                                     "type": "user",
+                                    "value": {}
+                                },
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
                                     "value": {}
                                 }
                             ],
