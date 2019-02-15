@@ -1,5 +1,5 @@
 {
-    "packageId": "2ecb9b86389322",
+    "packageId": "1149532ea74d71",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -158,11 +158,6 @@
                     "parameters": {
                         "dynamic": {
                             "recipients": [
-                                {
-                                    "id": "presser",
-                                    "type": "presser",
-                                    "value": {}
-                                },
                                 {
                                     "id": "1dd9c8a178fd1",
                                     "type": "question",
