@@ -1,5 +1,5 @@
 {
-    "packageId": "261e27de4fc3fa",
+    "packageId": "1de0b29fee612c",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -385,6 +385,61 @@
             ],
             "navigation": {
                 "id": "140f74d3f76f06",
+                "type": "node",
+                "parent": null,
+                "children": []
+            },
+            "webhooks": []
+        },
+        {
+            "buttonId": "2e4da53e2fce12",
+            "name": "my parcels",
+            "description": "all my parcels",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "datastore question",
+                    "type": "datastoreitem",
+                    "values": {
+                        "storeId": "collected",
+                        "schema": [
+                            {
+                                "id": "13ea095573d5f3_pressed",
+                                "path": "18c521ca016893,13ea095573d5f3_pressed",
+                                "alias": "picked up"
+                            },
+                            {
+                                "id": "102ed7e1ce2796",
+                                "path": "18c521ca016893,102ed7e1ce2796",
+                                "alias": "type"
+                            },
+                            {
+                                "id": "2391a50203f998",
+                                "path": "18c521ca016893,2391a50203f998",
+                                "alias": "code"
+                            },
+                            {
+                                "id": "13deb06d11deb3",
+                                "path": "13deb06d11deb3",
+                                "alias": "signature"
+                            }
+                        ],
+                        "filters": [
+                            {
+                                "type": "user",
+                                "id": "1dd9c8a178fd1",
+                                "path": "18c521ca016893,1dd9c8a178fd1"
+                            }
+                        ]
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "22a796ac8ced7a",
+                    "number": 1
+                }
+            ],
+            "navigation": {
+                "id": "22a796ac8ced7a",
                 "type": "node",
                 "parent": null,
                 "children": []
