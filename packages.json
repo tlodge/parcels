@@ -1,5 +1,5 @@
 {
-    "packageId": "130da37706f40d",
+    "packageId": "21f13d7ce3bf24",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -8,7 +8,6 @@
             "name": "parcel delivery",
             "description": "parcel delivery",
             "type": "action",
-            "batch": true,
             "questions": [
                 {
                     "question": "who is the parcel for?",
@@ -18,7 +17,7 @@
                     "compulsory": true,
                     "questionId": "1dd9c8a178fd1",
                     "number": 1,
-                    "batch":true
+                    "batch": true
                 },
                 {
                     "question": "parcel type",
@@ -400,55 +399,51 @@
             "type": "action",
             "questions": [
                 {
-                    "question": "datastore question",
+                    "question": "my parcels",
                     "type": "datastoreitem",
                     "values": {
-                        "storeId": "collected",
+                        "storeId": "deliveries",
                         "schema": [
                             {
                                 "id": "13ea095573d5f3_pressed",
-                                "path": "18c521ca016893,13ea095573d5f3_pressed",
-                                "alias": "picked up"
+                                "path": "13ea095573d5f3_pressed",
+                                "alias": "received",
+                                "default": ""
                             },
                             {
                                 "id": "102ed7e1ce2796",
-                                "path": "18c521ca016893,102ed7e1ce2796",
-                                "alias": "type"
+                                "path": "102ed7e1ce2796",
+                                "alias": "parcel type",
+                                "default": ""
                             },
                             {
                                 "id": "2391a50203f998",
-                                "path": "18c521ca016893,2391a50203f998",
-                                "alias": "code"
-                            },
-                            {
-                                "id": "13deb06d11deb3",
-                                "path": "13deb06d11deb3",
-                                "alias": "signature"
+                                "path": "2391a50203f998",
+                                "alias": "code",
+                                "default": ""
                             }
                         ],
                         "filters": [
                             {
                                 "type": "user",
                                 "id": "1dd9c8a178fd1",
-                                "path": "18c521ca016893,1dd9c8a178fd1"
-                            },
-                            {
-                                "type": "user",
-                                "id": "13ea095573d5f3_presser",
-                                "path": "18c521ca016893,13ea095573d5f3_presser"
+                                "path": "1dd9c8a178fd1"
                             }
-                        ]
+                        ],
+                        "limit": -1,
+                        "orderby": "pressed",
+                        "sortby": "asc"
                     },
                     "validators": [],
                     "compulsory": true,
-                    "questionId": "22a796ac8ced7a",
+                    "questionId": "14d83a600983ac",
                     "number": 1
                 }
             ],
             "navigation": {
-                "id": "22a796ac8ced7a",
+                "id": "14d83a600983ac",
                 "type": "node",
-                "parent": null,
+                "parent": "22a796ac8ced7a",
                 "children": []
             },
             "webhooks": []
