@@ -2,6 +2,7 @@
     "packageId": "130da37706f40d",
     "name": "parcels",
     "description": "parcel pickup and delivery",
+    "batchable": true,
     "buttons": [
         {
             "buttonId": "153f852dac4c0e",
@@ -16,7 +17,8 @@
                     "validators": [],
                     "compulsory": true,
                     "questionId": "1dd9c8a178fd1",
-                    "number": 1
+                    "number": 1,
+                    "batch":true
                 },
                 {
                     "question": "parcel type",
