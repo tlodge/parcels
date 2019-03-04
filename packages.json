@@ -1,5 +1,5 @@
 {
-    "packageId": "27de92bf39a6a",
+    "packageId": "1979a3af1a6566",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -226,7 +226,7 @@
             "type": "action",
             "questions": [
                 {
-                    "question": "datastore question",
+                    "question": "parcel pickups",
                     "type": "datastoreitem",
                     "values": {
                         "storeId": "deliveries",
