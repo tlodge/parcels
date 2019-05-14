@@ -1,5 +1,5 @@
 {
-    "packageId": "1979a3af1a6566",
+    "packageId": "a40ac602fa48c8",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -7,7 +7,6 @@
             "buttonId": "153f852dac4c0e",
             "name": "parcel delivery",
             "description": "parcel delivery",
-            "batch": true,
             "type": "action",
             "questions": [
                 {
@@ -46,7 +45,7 @@
                     "question": "parcel code",
                     "type": "serverfunction",
                     "values": {
-                        "url": "https://[buttonkit]/api/v1/unique",
+                        "url": "/api/v1/unique",
                         "method": "POST",
                         "responseType": "text",
                         "description": "please write this code on the letter/package.  This code will be provided to you at pickup."
@@ -123,7 +122,8 @@
                         ],
                         "rules": []
                     }
-                ]
+                ],
+                "defaults": {}
             },
             "webhooks": [
                 {
@@ -296,7 +296,8 @@
                         ],
                         "rules": []
                     }
-                ]
+                ],
+                "defaults": {}
             },
             "webhooks": [
                 {
@@ -389,7 +390,8 @@
                 "id": "140f74d3f76f06",
                 "type": "node",
                 "parent": null,
-                "children": []
+                "children": [],
+                "defaults": {}
             },
             "webhooks": []
         },
@@ -445,7 +447,8 @@
                 "id": "14d83a600983ac",
                 "type": "node",
                 "parent": "22a796ac8ced7a",
-                "children": []
+                "children": [],
+                "defaults": {}
             },
             "webhooks": []
         }
