@@ -1,5 +1,5 @@
 {
-    "packageId": "ef49b0f1897238",
+    "packageId": "137634effb9d99",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -7,11 +7,10 @@
             "buttonId": "153f852dac4c0e",
             "name": "parcel delivery",
             "description": "parcel delivery",
-            "batch": true,
             "type": "action",
             "questions": [
                 {
-                    "question": "who is the parcel for?",
+                    "question": "who is the parcel for? (demo: 1001)",
                     "type": "user",
                     "values": {},
                     "validators": [],
@@ -26,12 +25,12 @@
                     "values": {
                         "options": [
                             "amazon",
-                            "regsietered letter",
                             "parcel",
                             "groceries",
                             "flowers",
                             "laundry",
-                            "other"
+                            "other",
+                            "registered letter"
                         ],
                         "multiple": "single",
                         "none": false,
