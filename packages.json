@@ -1,5 +1,5 @@
 {
-    "packageId": "137634effb9d99",
+    "packageId": "6a0b82b93840fc",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -7,6 +7,7 @@
             "buttonId": "153f852dac4c0e",
             "name": "parcel delivery",
             "description": "parcel delivery",
+            "batch": true,
             "type": "action",
             "questions": [
                 {
