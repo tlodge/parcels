@@ -1,5 +1,5 @@
 {
-    "packageId": "2c3d26a55db6ba",
+    "packageId": "103fe88deebd57",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -281,7 +281,7 @@
                     },
                     "validators": [],
                     "compulsory": true,
-                    "questionId": "405c5b7172bfc8",
+                    "questionId": "1be0cadcdc04ed",
                     "number": 3
                 }
             ],
@@ -310,11 +310,10 @@
                                 ],
                                 "rules": []
                             }
-                        ],
-                        "rules": []
+                        ]
                     },
                     {
-                        "id": "405c5b7172bfc8",
+                        "id": "1be0cadcdc04ed",
                         "type": "node",
                         "parent": "18c521ca016893",
                         "children": [],
@@ -325,6 +324,8 @@
                                 "value": {
                                     "type": "consent",
                                     "values": {
+                                        "cid": "e3a12c6f28feb8",
+                                        "text": "<p>&lt;p&gt; hello this is some nice kind of consent question!&lt;/p&gt;</p>",
                                         "type": "datastoreitem",
                                         "datastore": "deliveries",
                                         "path": "1dd9c8a178fd1",
