@@ -1,5 +1,5 @@
 {
-    "packageId": "103fe88deebd57",
+    "packageId": "193a957aab4701",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -268,20 +268,14 @@
                     "number": 2
                 },
                 {
-                    "question": "options question",
-                    "type": "options",
+                    "question": "consent",
+                    "type": "consent",
                     "values": {
-                        "options": [
-                            "yes",
-                            "no"
-                        ],
-                        "multiple": "single",
-                        "none": false,
-                        "description": ""
+                        "cid": "2ff98fec4a4cf6"
                     },
                     "validators": [],
-                    "compulsory": true,
-                    "questionId": "1be0cadcdc04ed",
+                    "compulsory": false,
+                    "questionId": "306be7f2b70f9",
                     "number": 3
                 }
             ],
@@ -313,7 +307,7 @@
                         ]
                     },
                     {
-                        "id": "1be0cadcdc04ed",
+                        "id": "306be7f2b70f9",
                         "type": "node",
                         "parent": "18c521ca016893",
                         "children": [],
@@ -324,12 +318,8 @@
                                 "value": {
                                     "type": "consent",
                                     "values": {
-                                        "cid": "e3a12c6f28feb8",
-                                        "text": "<p>&lt;p&gt; hello this is some nice kind of consent question!&lt;/p&gt;</p>",
-                                        "type": "datastoreitem",
-                                        "datastore": "deliveries",
-                                        "path": "1dd9c8a178fd1",
-                                        "consented": true
+                                        "cid": "2ff98fec4a4cf6",
+                                        "text": "<p>This is some <strong>new consent</strong> thing that you will need to consent to</p>"
                                     }
                                 }
                             }
