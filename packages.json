@@ -1,5 +1,5 @@
 {
-    "packageId": "193a957aab4701",
+    "packageId": "fe5ee3aeede878",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -319,7 +319,11 @@
                                     "type": "consent",
                                     "values": {
                                         "cid": "2ff98fec4a4cf6",
-                                        "text": "<p>This is some <strong>new consent</strong> thing that you will need to consent to</p>"
+                                        "text": "<p>This is some <strong>new consent</strong> thing that you will need to consent to</p>",
+                                        "type": "datastoreitem",
+                                        "datastore": "deliveries",
+                                        "path": "1dd9c8a178fd1",
+                                        "consented": true
                                     }
                                 }
                             }
