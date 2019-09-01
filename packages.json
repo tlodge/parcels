@@ -1,5 +1,5 @@
 {
-    "packageId": "6a0b82b93840fc",
+    "packageId": "2c3d26a55db6ba",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -7,7 +7,6 @@
             "buttonId": "153f852dac4c0e",
             "name": "parcel delivery",
             "description": "parcel delivery",
-            "batch": true,
             "type": "action",
             "questions": [
                 {
@@ -267,6 +266,23 @@
                     "compulsory": true,
                     "questionId": "13deb06d11deb3",
                     "number": 2
+                },
+                {
+                    "question": "options question",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": ""
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "405c5b7172bfc8",
+                    "number": 3
                 }
             ],
             "navigation": {
@@ -296,6 +312,27 @@
                             }
                         ],
                         "rules": []
+                    },
+                    {
+                        "id": "405c5b7172bfc8",
+                        "type": "node",
+                        "parent": "18c521ca016893",
+                        "children": [],
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "18c521ca016893",
+                                "value": {
+                                    "type": "consent",
+                                    "values": {
+                                        "type": "datastoreitem",
+                                        "datastore": "deliveries",
+                                        "path": "1dd9c8a178fd1",
+                                        "consented": true
+                                    }
+                                }
+                            }
+                        ]
                     }
                 ],
                 "defaults": {}
