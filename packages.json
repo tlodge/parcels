@@ -1,5 +1,5 @@
 {
-    "packageId": "1f51ee28023a69",
+    "packageId": "264d30a7a613a2",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -594,6 +594,89 @@
                                         "text": "<p>You need to give your consent I am afraid!</p>",
                                         "type": "presser",
                                         "id": "presser"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
+            },
+            "webhooks": []
+        },
+        {
+            "buttonId": "2cdea6f1a1c80a",
+            "name": "chosen user consent",
+            "description": "another test",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "please choose a user",
+                    "type": "user",
+                    "values": {},
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "d0dc095a5f9538",
+                    "number": 1
+                },
+                {
+                    "question": "consent",
+                    "type": "consent",
+                    "values": {
+                        "cid": "42a5f9ae6323cc",
+                        "user": {
+                            "type": "user",
+                            "id": "d0dc095a5f9538",
+                            "name": "please choose a user"
+                        }
+                    },
+                    "validators": [],
+                    "compulsory": false,
+                    "questionId": "1816a5d0b51e98",
+                    "number": 2
+                },
+                {
+                    "question": "lovely consented!!",
+                    "type": "freetext",
+                    "values": {
+                        "format": "medium",
+                        "description": ""
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "23c358f4b2dace",
+                    "number": 3
+                }
+            ],
+            "navigation": {
+                "id": "d0dc095a5f9538",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "1816a5d0b51e98",
+                        "type": "node",
+                        "parent": "d0dc095a5f9538",
+                        "children": []
+                    },
+                    {
+                        "id": "23c358f4b2dace",
+                        "type": "node",
+                        "parent": "d0dc095a5f9538",
+                        "children": [],
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "d0dc095a5f9538",
+                                "value": {
+                                    "type": "consent",
+                                    "values": {
+                                        "cid": "42a5f9ae6323cc",
+                                        "text": "<p>This user needs to provide consent</p>",
+                                        "type": "user",
+                                        "id": "d0dc095a5f9538"
                                     }
                                 }
                             }
