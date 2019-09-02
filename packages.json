@@ -1,5 +1,5 @@
 {
-    "packageId": "264d30a7a613a2",
+    "packageId": "764d1a43266144",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -280,7 +280,8 @@
                             "datastore": "deliveries",
                             "path": "1dd9c8a178fd1",
                             "name": "recipient"
-                        }
+                        },
+                        "consenttext": "I understand and give my consent"
                     },
                     "validators": [],
                     "compulsory": true,
@@ -576,7 +577,8 @@
                         "id": "180a901bf4f019",
                         "type": "node",
                         "parent": "14462d924421b",
-                        "children": []
+                        "children": [],
+                        "rules": []
                     },
                     {
                         "id": "2c9636260beccc",
@@ -659,7 +661,8 @@
                         "id": "1816a5d0b51e98",
                         "type": "node",
                         "parent": "d0dc095a5f9538",
-                        "children": []
+                        "children": [],
+                        "rules": []
                     },
                     {
                         "id": "23c358f4b2dace",
