@@ -1,5 +1,5 @@
 {
-    "packageId": "195732acc7aefb",
+    "packageId": "15be21c07703c1",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -283,7 +283,7 @@
                         }
                     },
                     "validators": [],
-                    "compulsory": false,
+                    "compulsory": true,
                     "questionId": "306be7f2b70f9",
                     "number": 3
                 }
