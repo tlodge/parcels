@@ -1,5 +1,5 @@
 {
-    "packageId": "15be21c07703c1",
+    "packageId": "26be2b7f9a465a",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -322,7 +322,7 @@
                                     "type": "consent",
                                     "values": {
                                         "cid": "ebdc4cc5b933d",
-                                        "text": "<p>please consent to us using your address, email, sms and name to provide parcel notifications to you</p>",
+                                        "text": "<p>please consent to us using your address, email, sms and name to provide parcel notifications to you ok</p>",
                                         "type": "datastoreitem",
                                         "datastore": "deliveries",
                                         "path": "1dd9c8a178fd1",
