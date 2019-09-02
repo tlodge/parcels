@@ -1,5 +1,5 @@
 {
-    "packageId": "6e125e7fbf83f",
+    "packageId": "1c4f6490a8b1e3",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -123,7 +123,9 @@
                         "rules": []
                     }
                 ],
-                "defaults": {}
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
             },
             "webhooks": [
                 {
@@ -312,13 +314,6 @@
                                 "rules": []
                             }
                         ],
-                        "rules": []
-                    },
-                    {
-                        "id": "306be7f2b70f9",
-                        "type": "node",
-                        "parent": "18c521ca016893",
-                        "children": [],
                         "rules": [
                             {
                                 "type": "question",
@@ -326,8 +321,8 @@
                                 "value": {
                                     "type": "consent",
                                     "values": {
-                                        "cid": "2ff98fec4a4cf6",
-                                        "text": "<p>This is some <strong>new consent</strong> thing that you will need to consent to</p>",
+                                        "cid": "ebdc4cc5b933d",
+                                        "text": "<p>please consent to us using your address, email, sms and name to provide parcel notifications to you</p>",
                                         "type": "datastoreitem",
                                         "datastore": "deliveries",
                                         "path": "1dd9c8a178fd1",
@@ -336,9 +331,26 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "id": "306be7f2b70f9",
+                        "type": "node",
+                        "parent": "18c521ca016893",
+                        "children": [
+                            {
+                                "id": "19a7854bbf856c",
+                                "type": "subtree",
+                                "parent": null,
+                                "nodeid": "13deb06d11deb3",
+                                "children": []
+                            }
+                        ],
+                        "rules": []
                     }
                 ],
-                "defaults": {}
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
             },
             "webhooks": [
                 {
@@ -432,7 +444,9 @@
                 "type": "node",
                 "parent": null,
                 "children": [],
-                "defaults": {}
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
             },
             "webhooks": []
         },
@@ -489,7 +503,9 @@
                 "type": "node",
                 "parent": "22a796ac8ced7a",
                 "children": [],
-                "defaults": {}
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
             },
             "webhooks": []
         }
