@@ -1,5 +1,5 @@
 {
-    "packageId": "26be2b7f9a465a",
+    "packageId": "1f51ee28023a69",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -504,6 +504,102 @@
                 "type": "node",
                 "parent": "22a796ac8ced7a",
                 "children": [],
+                "defaults": {
+                    "18c521ca016893": "306be7f2b70f9"
+                }
+            },
+            "webhooks": []
+        },
+        {
+            "buttonId": "187f72ea045667",
+            "name": "presser consent",
+            "description": "this is a presser consent test",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "first options question",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": ""
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "14462d924421b",
+                    "number": 1
+                },
+                {
+                    "question": "consent",
+                    "type": "consent",
+                    "values": {
+                        "cid": "2009c6ddc079e8",
+                        "user": {
+                            "name": "presser",
+                            "id": "presser",
+                            "type": "presser"
+                        }
+                    },
+                    "validators": [],
+                    "compulsory": false,
+                    "questionId": "180a901bf4f019",
+                    "number": 2
+                },
+                {
+                    "question": "consented options",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": ""
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2c9636260beccc",
+                    "number": 3
+                }
+            ],
+            "navigation": {
+                "id": "14462d924421b",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "180a901bf4f019",
+                        "type": "node",
+                        "parent": "14462d924421b",
+                        "children": []
+                    },
+                    {
+                        "id": "2c9636260beccc",
+                        "type": "node",
+                        "parent": "14462d924421b",
+                        "children": [],
+                        "rules": [
+                            {
+                                "type": "consent",
+                                "id": "consent",
+                                "value": {
+                                    "type": "consent",
+                                    "values": {
+                                        "cid": "2009c6ddc079e8",
+                                        "text": "<p>You need to give your consent I am afraid!</p>",
+                                        "type": "presser",
+                                        "id": "presser"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
                 "defaults": {
                     "18c521ca016893": "306be7f2b70f9"
                 }
