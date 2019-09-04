@@ -1,5 +1,5 @@
 {
-    "packageId": "10d115cd903887",
+    "packageId": "1249a756365b1f",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -10,7 +10,7 @@
             "type": "action",
             "questions": [
                 {
-                    "question": "who is the parcel for? (demo: 1001)",
+                    "question": "who is the parcel for?",
                     "type": "user",
                     "values": {},
                     "validators": [],
