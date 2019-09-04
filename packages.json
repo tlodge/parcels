@@ -1,5 +1,5 @@
 {
-    "packageId": "1249a756365b1f",
+    "packageId": "a6b5afc3293998",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -102,7 +102,14 @@
                                                 "id": "13ea095573d5f3",
                                                 "type": "node",
                                                 "parent": "112aa046d29fb2",
-                                                "children": [],
+                                                "children": [
+                                                    {
+                                                        "id": "2ee63fe18d10d2",
+                                                        "type": "node",
+                                                        "parent": "13ea095573d5f3",
+                                                        "children": []
+                                                    }
+                                                ],
                                                 "rules": []
                                             }
                                         ],
@@ -146,6 +153,33 @@
                         }
                     },
                     "webhookId": "13ea095573d5f3"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [],
+                            "placeholders": []
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "sms": {
+                                "body": ""
+                            },
+                            "message": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "2ee63fe18d10d2"
                 }
             ]
         },
