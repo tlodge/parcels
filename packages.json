@@ -1,5 +1,5 @@
 {
-    "packageId": "a6b5afc3293998",
+    "packageId": "1ff1068dfe6128",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -107,7 +107,8 @@
                                                         "id": "2ee63fe18d10d2",
                                                         "type": "node",
                                                         "parent": "13ea095573d5f3",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": []
                                                     }
                                                 ],
                                                 "rules": []
@@ -161,16 +162,35 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "recipients": [],
-                            "placeholders": []
+                            "recipients": [
+                                {
+                                    "id": "1dd9c8a178fd1",
+                                    "type": "question",
+                                    "answer": {}
+                                }
+                            ],
+                            "placeholders": [
+                                {
+                                    "id": "102ed7e1ce2796",
+                                    "qid": "102ed7e1ce2796",
+                                    "key": "value",
+                                    "type": "question"
+                                },
+                                {
+                                    "id": "2391a50203f998",
+                                    "qid": "2391a50203f998",
+                                    "key": "value",
+                                    "type": "question"
+                                }
+                            ]
                         },
                         "static": {
                             "email": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "you have a delivery",
+                                "body": "Dear student,\n\nYou have a delivery ([102ed7e1ce2796]).  Please come and pick it up from reception, code: [2391a50203f998] "
                             },
                             "sms": {
-                                "body": ""
+                                "body": "Dear student, you have a delivery ([102ed7e1ce2796]).  Please come and pick it up from reception, code: [2391a50203f998]"
                             },
                             "message": {
                                 "subject": "",
