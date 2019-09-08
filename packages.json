@@ -1,5 +1,5 @@
 {
-    "packageId": "1ff1068dfe6128",
+    "packageId": "a842d1823cbcf",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -414,6 +414,26 @@
                                 "id": "13deb06d11deb3",
                                 "path": "13deb06d11deb3",
                                 "alias": "signature"
+                            }
+                        ],
+                        "dschema": [
+                            {
+                                "id": "1dd9c8a178fd1",
+                                "path": "18c521ca016893,1dd9c8a178fd1",
+                                "alias": "recipient",
+                                "default": ""
+                            },
+                            {
+                                "id": "102ed7e1ce2796",
+                                "path": "18c521ca016893,102ed7e1ce2796",
+                                "alias": "delivery type",
+                                "default": ""
+                            },
+                            {
+                                "id": "13deb06d11deb3",
+                                "path": "13deb06d11deb3",
+                                "alias": "signature",
+                                "default": ""
                             }
                         ]
                     },
