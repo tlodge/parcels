@@ -1,5 +1,5 @@
 {
-    "packageId": "a842d1823cbcf",
+    "packageId": "211d589aa4c974",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -56,17 +56,12 @@
                     "number": 3
                 },
                 {
-                    "question": "where is it located",
+                    "question": "where is it stored?",
                     "type": "options",
                     "values": {
                         "options": [
-                            "sh1",
-                            "sh2",
-                            "sh3",
-                            "sh4",
-                            "sh5",
-                            "f",
-                            "safe"
+                            "normal",
+                            "oversize"
                         ],
                         "multiple": "single",
                         "none": false,
