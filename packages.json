@@ -1,5 +1,5 @@
 {
-    "packageId": "144c44ff63350c",
+    "packageId": "315bbca9af83ca",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -406,7 +406,7 @@
                             ]
                         },
                         "static": {
-                            "sheetName": ""
+                            "sheetName": "collections"
                         }
                     },
                     "aliases": {
