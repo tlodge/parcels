@@ -1,5 +1,5 @@
 {
-    "packageId": "12874cb125c5ce",
+    "packageId": "25f6096d6cecea",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -379,26 +379,6 @@
                                     "key": "pressed"
                                 },
                                 {
-                                    "id": "1dd9c8a178fd1",
-                                    "type": "user",
-                                    "key": "1dd9c8a178fd1"
-                                },
-                                {
-                                    "id": "102ed7e1ce2796",
-                                    "type": "options",
-                                    "key": "102ed7e1ce2796"
-                                },
-                                {
-                                    "id": "2391a50203f998",
-                                    "type": "serverfunction",
-                                    "key": "2391a50203f998"
-                                },
-                                {
-                                    "id": "112aa046d29fb2",
-                                    "type": "options",
-                                    "key": "112aa046d29fb2"
-                                },
-                                {
                                     "id": "13deb06d11deb3",
                                     "type": "signature",
                                     "key": "13deb06d11deb3"
@@ -407,6 +387,11 @@
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
                                     "key": "18c521ca016893"
+                                },
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "key": "presser"
                                 }
                             ]
                         },
@@ -421,7 +406,8 @@
                         "2391a50203f998": "code",
                         "112aa046d29fb2": "location",
                         "13deb06d11deb3": "signature",
-                        "18c521ca016893": "picked up"
+                        "18c521ca016893": "picked up",
+                        "presser": "staff member"
                     },
                     "webhookId": "287660c6b004cc"
                 },
