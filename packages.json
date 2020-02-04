@@ -1,5 +1,5 @@
 {
-    "packageId": "82c8dc5f9e968",
+    "packageId": "144c44ff63350c",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -283,11 +283,17 @@
                                 "parent": "13deb06d11deb3",
                                 "children": [
                                     {
-                                        "id": "13baed5c9a3d3c",
+                                        "id": "287660c6b004cc",
                                         "type": "node",
                                         "parent": "cac4267a920ae8",
-                                        "children": [],
-                                        "rules": []
+                                        "children": [
+                                            {
+                                                "id": "12eceb93a83535",
+                                                "type": "node",
+                                                "parent": "287660c6b004cc",
+                                                "children": []
+                                            }
+                                        ]
                                     }
                                 ],
                                 "rules": []
@@ -360,6 +366,60 @@
                     "webhookId": "cac4267a920ae8"
                 },
                 {
+                    "name": "sheet endpoint",
+                    "type": "sheet",
+                    "url": "https://[buttonkit]/api/v1/datastore/sheet",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "sheetparameters": [
+                                {
+                                    "id": "pressed",
+                                    "type": "pressed",
+                                    "key": "pressed"
+                                },
+                                {
+                                    "id": "1dd9c8a178fd1",
+                                    "type": "user",
+                                    "key": "1dd9c8a178fd1"
+                                },
+                                {
+                                    "id": "102ed7e1ce2796",
+                                    "type": "options",
+                                    "key": "102ed7e1ce2796"
+                                },
+                                {
+                                    "id": "2391a50203f998",
+                                    "type": "serverfunction",
+                                    "key": "2391a50203f998"
+                                },
+                                {
+                                    "id": "112aa046d29fb2",
+                                    "type": "options",
+                                    "key": "112aa046d29fb2"
+                                },
+                                {
+                                    "id": "13deb06d11deb3",
+                                    "type": "signature",
+                                    "key": "13deb06d11deb3"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "sheetName": ""
+                        }
+                    },
+                    "aliases": {
+                        "pressed": "logged",
+                        "1dd9c8a178fd1": "recipient",
+                        "102ed7e1ce2796": "type",
+                        "2391a50203f998": "code",
+                        "112aa046d29fb2": "location",
+                        "13deb06d11deb3": "signature"
+                    },
+                    "webhookId": "287660c6b004cc"
+                },
+                {
                     "name": "delete log item",
                     "type": "deletelogitem",
                     "url": "https://[buttonkit]/api/v1/datastore/delete/question",
@@ -374,7 +434,7 @@
                             "questionId": "18c521ca016893"
                         }
                     },
-                    "webhookId": "13baed5c9a3d3c"
+                    "webhookId": "12eceb93a83535"
                 }
             ]
         },
