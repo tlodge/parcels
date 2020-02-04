@@ -1,5 +1,5 @@
 {
-    "packageId": "315bbca9af83ca",
+    "packageId": "12874cb125c5ce",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -402,6 +402,11 @@
                                     "id": "13deb06d11deb3",
                                     "type": "signature",
                                     "key": "13deb06d11deb3"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "18c521ca016893"
                                 }
                             ]
                         },
@@ -415,7 +420,8 @@
                         "102ed7e1ce2796": "type",
                         "2391a50203f998": "code",
                         "112aa046d29fb2": "location",
-                        "13deb06d11deb3": "signature"
+                        "13deb06d11deb3": "signature",
+                        "18c521ca016893": "picked up"
                     },
                     "webhookId": "287660c6b004cc"
                 },
