@@ -374,43 +374,13 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "sheetparameters": [
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "102ed7e1ce2796"
-                                },
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "1dd9c8a178fd1"
-                                },
-                                {
-                                    "id": "presser",
-                                    "type": "presser",
-                                    "key": "presser"
-                                },
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "112aa046d29fb2"
-                                }
-                            ]
+                            "sheetparameters": []
                         },
                         "static": {
                             "sheetName": "collections"
                         }
                     },
-                    "aliases": {
-                        "pressed": "logged",
-                        "1dd9c8a178fd1": "recipient",
-                        "102ed7e1ce2796": "the parcel type",
-                        "2391a50203f998": "code",
-                        "112aa046d29fb2": "location",
-                        "13deb06d11deb3": "signature",
-                        "18c521ca016893": "picked up",
-                        "presser": "staff member"
-                    },
+                    "aliases": {},
                     "webhookId": "287660c6b004cc"
                 },
                 {
