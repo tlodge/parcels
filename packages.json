@@ -375,36 +375,7 @@
                     "parameters": {
                         "dynamic": {
                             "sheetparameters": [
-                                {
-                                    "id": "pressed",
-                                    "type": "pressed",
-                                    "key": "pressed"
-                                },
-                                {
-                                    "id": "13deb06d11deb3",
-                                    "type": "signature",
-                                    "key": "13deb06d11deb3"
-                                },
-                                {
-                                    "id": "presser",
-                                    "type": "presser",
-                                    "key": "presser"
-                                },
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "13ea095573d5f3_presser"
-                                },
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "1dd9c8a178fd1"
-                                },
-                                {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "102ed7e1ce2796"
-                                }
+                                
                             ]
                         },
                         "static": {
