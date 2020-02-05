@@ -1,5 +1,5 @@
 {
-    "packageId": "1900b5ae49fef4",
+    "packageId": "1fc1e1b3189486",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -378,32 +378,44 @@
                                 {
                                     "id": "pressed",
                                     "type": "pressed",
-                                    "key": "pressed"
+                                    "key": "pressed",
+                                    "label": "stored"
                                 },
                                 {
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
-                                    "key": "13ea095573d5f3_pressed"
+                                    "key": "13ea095573d5f3_pressed",
+                                    "label": "picked up"
                                 },
                                 {
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
-                                    "key": "1dd9c8a178fd1"
+                                    "key": "1dd9c8a178fd1",
+                                    "label": "recipient"
                                 },
                                 {
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
-                                    "key": "102ed7e1ce2796"
+                                    "key": "102ed7e1ce2796",
+                                    "label": "parcel type"
                                 },
                                 {
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
-                                    "key": "2391a50203f998"
+                                    "key": "2391a50203f998",
+                                    "label": "code"
                                 },
                                 {
                                     "id": "18c521ca016893",
                                     "type": "datastoreitem",
-                                    "key": "112aa046d29fb2"
+                                    "key": "112aa046d29fb2",
+                                    "label": "location"
+                                },
+                                {
+                                    "id": "13deb06d11deb3",
+                                    "type": "signature",
+                                    "key": "13deb06d11deb3",
+                                    "label": "signature"
                                 }
                             ]
                         },
