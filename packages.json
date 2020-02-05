@@ -1,5 +1,5 @@
 {
-    "packageId": "f9437a2eae0df8",
+    "packageId": "1900b5ae49fef4",
     "name": "parcels",
     "description": "parcel pickup and delivery",
     "buttons": [
@@ -374,13 +374,51 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "sheetparameters": []
+                            "sheetparameters": [
+                                {
+                                    "id": "pressed",
+                                    "type": "pressed",
+                                    "key": "pressed"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "13ea095573d5f3_pressed"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "1dd9c8a178fd1"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "102ed7e1ce2796"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "2391a50203f998"
+                                },
+                                {
+                                    "id": "18c521ca016893",
+                                    "type": "datastoreitem",
+                                    "key": "112aa046d29fb2"
+                                }
+                            ]
                         },
                         "static": {
                             "sheetName": "collections"
                         }
                     },
-                    "aliases": {},
+                    "aliases": {
+                        "pressed": "logged",
+                        "13ea095573d5f3_pressed": "pickedup",
+                        "1dd9c8a178fd1": "recipient",
+                        "102ed7e1ce2796": "type",
+                        "2391a50203f998": "code",
+                        "112aa046d29fb2": "storage"
+                    },
                     "webhookId": "287660c6b004cc"
                 },
                 {
