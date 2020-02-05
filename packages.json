@@ -386,11 +386,6 @@
                                     "key": "13deb06d11deb3"
                                 },
                                 {
-                                    "id": "18c521ca016893",
-                                    "type": "datastoreitem",
-                                    "key": "18c521ca016893"
-                                },
-                                {
                                     "id": "presser",
                                     "type": "presser",
                                     "key": "presser"
